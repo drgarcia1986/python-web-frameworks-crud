@@ -21,13 +21,13 @@ The implementation of all examples follow this API.
 #### Persons
 
 ##### Routes
-* **/persons**
-* **/persons/{id}**
+* /persons
+* /persons/{id}/
 
 ##### GET /persons/
 Return a collection of persons
 ```json
-curl -i localhost:8080/api/persons/
+curl -i http://localhost:8080/api/persons/
 
 HTTP/1.0 200 OK
 Content-Type: application/json
@@ -52,7 +52,7 @@ Content-Length: 590
 ##### GET /persons/{id}/
 Return instance of a person
 ```json
-curl -i localhost:8080/api/persons/1/
+curl -i http://localhost:8080/api/persons/1/
 
 HTTP/1.0 200 OK
 Content-Type: application/json
@@ -81,7 +81,7 @@ Content-Length: 67
 }
 ```
 
-##### PUT /persons/1/
+##### PUT /persons/{id}/
 Update a instance of person
 ```json
 curl -i -X POST -H 'Content-Type: application/json' -d '{"name": "Max Fear", "email": "max_fear@capefear.com"}' http://localhost:8080/api/persons/1/
@@ -98,7 +98,7 @@ Content-Length: 71
 ```
 
 ##### DELETE /persons/1/
-Delte a instance of person
+Delete a instance of person
 ```json
 curl -i -X DELETE http://localhost:8080/api/persons/1/
 
