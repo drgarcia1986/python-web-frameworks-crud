@@ -3,12 +3,12 @@ Collection of simple CRUD in some python web frameworks.
 This examples is based on Python 3.4 and last version of web frameworks.
 
 ## Web Frameworks
-* Flask
+* [Flask](/flask)
 * Django
 * Bottle
 * Falcon
 * Tornado
-* Muffin
+* [Muffin](/muffin)
 
 ## API
 The implementation of all examples follow this API.
@@ -84,7 +84,7 @@ Content-Length: 67
 ##### PUT /persons/{id}/
 Update a instance of person
 ```json
-curl -i -X POST -H 'Content-Type: application/json' -d '{"name": "Max Fear", "email": "max_fear@capefear.com"}' http://localhost:8080/api/persons/1/
+curl -i -X PUT -H 'Content-Type: application/json' -d '{"name": "Max Fear", "email": "max_fear@capefear.com"}' http://localhost:8080/api/persons/1/
 
 HTTP/1.0 200 OK
 Content-Type: application/json
