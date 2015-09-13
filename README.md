@@ -6,7 +6,7 @@ This examples is based on Python 3.4 and last version of web frameworks.
 * [Flask](/flask)
 * Django
 * Bottle
-* Falcon
+* [Falcon](/falcon)
 * Tornado
 * [Muffin](/muffin)
 
